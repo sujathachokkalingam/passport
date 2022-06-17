@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color:lightblue;
+    background-image: none;
+}
+.app{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.home{
+    width: 100%;
+    max-width: 400px;
+    padding:50px 30px;
+    background-color: beige;
+    border-radius: 16px;
+    text-align: center;
+} 
+form{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 30px;
+    background-image: linear-gradient(to bottom,pink,green);
+    box-shadow: rgba(234, 21, 206, 0.1);
+    border-radius: 16px;
+}
+form h1{
+    color: blue;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.err-msg{
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: palevioletred;
+    box-shadow: greenyellow;
+
+}
+form label{
+    display: block;
+    color: green;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+form input{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+form input:not([type="submit"]){
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: #326562;
+    box-shadow:rgb(47, 113, 255); 
+    transition:0.4s ;
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: 300;
+}
+form input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding:  15px;
+    border-radius: 16px;
+    background-color: hsla(63, 89%, 50%, 0.137);
+    box-shadow:rgb(160, 218, 51); 
+    transition:0.5s ;
+    color: skyblue;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
